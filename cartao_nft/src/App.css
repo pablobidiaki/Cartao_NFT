@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  background-color: rgb(13, 26, 45);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+  margin: 15px;
+  width: 250px;
+  height:250px;
+  border-radius:10px ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+hr{
+  margin: 5px 15px;
+  border-color: rgb(134, 151, 181);
+}
+
+#card{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(22, 38, 61);
+  border-radius: 20px;
+  width: 280px;
+  box-shadow: 20px 20px 20px rgb(12, 23, 41);
+}
+
+.NFTname{
+  margin: 15px;
+  margin-top: 0px;
   color: white;
+  font-size:1.2rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.NFTname:hover{
+  transition: .5s;
+  color: rgb(55, 243, 242);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NFTdescrition{
+  color: rgb(134, 151, 181);
+  margin:15px;
+  font-size: .9rem;
+}
+
+.details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.help{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icons{
+  width: 15px;
+  height: 15px;
+}
+
+.price{
+  color: rgb(55, 243, 242);
+  margin-left: -10px;
+  font-size: .8rem;
+}
+
+.hours{
+  color:rgb(134, 151, 181) ;
+  margin-left: -10px;
+  font-size: .8rem;
+  margin-right: 20px;
+}
+
+.photo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.creator-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.createFor{
+  color: rgb(134, 151, 181);
+}
+
+.nameCreator{
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.nameCreator:hover{
+  transition: .5s;
+  color: rgb(55, 243, 242);
 }
