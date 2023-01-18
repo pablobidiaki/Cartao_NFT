@@ -75,6 +75,7 @@ hr{
   color: rgb(55, 243, 242);
   margin-left: -10px;
   font-size: .8rem;
+  font-weight: 700;
 }
 
 .hours{
@@ -111,4 +112,18 @@ hr{
 .nameCreator:hover{
   transition: .5s;
   color: rgb(55, 243, 242);
+}
+
+#center-img{
+  width: 500px;
+  height: 500px;
+}
+
+#modal-NFT{
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
