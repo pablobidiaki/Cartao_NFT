@@ -2,16 +2,39 @@ import React from "react";
 import imgNFT from "../componentes/imgs/image-equilibrium.jpg";
 import ethereum from "../componentes/imgs/icon-ethereum.svg";
 import clock from "../componentes/imgs/icon-clock.svg";
-import avatar from "../componentes/imgs/image-avatar.png"
-
-const card = document.getElementById('card')
+import avatar from "../componentes/imgs/image-avatar.png";
 
 function Card(){
     return(
         <>
+            <div id="modal-NFT">
+                <img className="center-img" src={imgNFT} /> <br/>
+                <button className="btnFechar" onClick={() => {
+                    const card = document.getElementById('card')
+                    const modal = document.getElementById('modal-NFT')
+                    card.style.transition='2s'
+                    card.style.opacity='1'
+                    modal.style.transition='1s'
+                    modal.style.opacity='0'
+                }}>FECHAR </button>
+            </div> 
             <div id="card">
-                <img src={imgNFT} alt='' />
-                <p onClick={()=>{card.style.opacity='0'}} className="NFTname"> Equilibrium #3429 </p>
+                <img style={{cursor:'pointer'}} onClick={()=>{
+                    const card = document.getElementById('card')
+                    const modal = document.getElementById('modal-NFT')
+                    card.style.transition='.8s'
+                    card.style.opacity='0'
+                    modal.style.transition='1s'
+                    modal.style.opacity='1'
+                }} src={imgNFT} alt='' />
+                <p onClick={()=>{
+                    const card = document.getElementById('card')
+                    const modal = document.getElementById('modal-NFT')
+                    card.style.transition='.8s'
+                    card.style.opacity='0'
+                    modal.style.transition='1s'
+                    modal.style.opacity='1'
+                }} className="NFTname"> Equilibrium #3429 </p>
                 <p className="NFTdescrition">Nossa coleção Equilibrium promove equilíbrio e calma </p>
                 <div className="details">
                     <div className="help">

@@ -114,7 +114,7 @@ hr{
   color: rgb(55, 243, 242);
 }
 
-#center-img{
+.center-img{
   width: 500px;
   height: 500px;
 }
@@ -126,4 +126,16 @@ hr{
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+}
+
+.btnFechar{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font-weight: 700;
+  background-color: #d63659;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
